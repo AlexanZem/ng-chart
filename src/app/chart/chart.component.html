@@ -1,7 +1,7 @@
-<svg class="chart" [attr.width]="width" [attr.height]="height">
+<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="width" [attr.height]="height" style="transform: scale(1, -1)">
 	<path fill="none"
-	      [attr.stroke]="strokeColor"
-	      [attr.stroke-width]="strokeWidth"
+	      [attr.stroke]="chartColor"
+	      [attr.stroke-width]="chartWidth"
 	      [attr.d]="points | pathShaper:step">
 	</path>
 	<g *ngIf="showPoints">

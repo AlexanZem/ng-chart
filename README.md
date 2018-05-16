@@ -1,27 +1,45 @@
-# PrimaryAnimation
+# Angular (2+) chart
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+It's an Angular module (ChartModule) for svg line charts construction.
 
-## Development server
+![alt text](src/assets/chart.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+##Getting Started
 
-## Code scaffolding
+1. Import ChartModule to you main module
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+imports: [
+	ChartModule
+],
+```
 
-## Build
+2. Init chart in your template (```point``` is required parameter)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+```angular2html
+<app-chart [points]="points"></app-chart>
+```
 
-## Running unit tests
+##Parameters
+### points* (default: [])
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### step  (default: 10)
+Distance between points x
+### width (default: '100%')
+Svg element width
+### height (default: '100%')
+Svg element height
+### chartWidth (default: 2)
+Chart line width
+### chartColor (default: '#039BE5')
+Chart line color
+### showPoints (default: false)
+Show points on chart
+### pointsColor (default: '#E1F5FE')
+Points color
+### pointRadius (default: 2)
+Radius of points
+    	
+    	
+    	
+   

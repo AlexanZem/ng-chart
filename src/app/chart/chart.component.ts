@@ -5,17 +5,13 @@ import {Component, Input, OnInit} from '@angular/core';
 	templateUrl: './chart.component.html'
 })
 export class ChartComponent implements OnInit {
-	// MAIN
 	@Input() step = 10;
-	@Input() points: number[];
-	// SVG
+	@Input() points: number[] = [];
 	@Input() width = '100%';
 	@Input() height = '100%';
-	// PATH
-	@Input() strokeWidth = 2;
-	@Input() strokeColor = '#000000';
-	// POINTS
-	@Input() pointsColor = '#000000';
+	@Input() chartWidth = 2;
+	@Input() chartColor = '#039BE5';
+	@Input() pointsColor = '#E1F5FE';
 	@Input() pointRadius = 2;
 	@Input() showPoints = false;
 
