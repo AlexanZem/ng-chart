@@ -1,0 +1,16 @@
+<svg class="chart" [attr.width]="width" [attr.height]="height">
+	<path fill="none"
+	      [attr.stroke]="strokeColor"
+	      [attr.stroke-width]="strokeWidth"
+	      [attr.d]="points | pathShaper:step">
+	</path>
+	<g *ngIf="showPoints">
+		<circle *ngFor="let point of points; let pointIdx = index"
+		        class="point"
+		        [attr.fill]="pointsColor"
+		        [attr.cx]="(pointIdx + 1) * step"
+		        [attr.cy]="point"
+		        [attr.r]="pointRadius">
+		</circle>
+	</g>
+</svg>
