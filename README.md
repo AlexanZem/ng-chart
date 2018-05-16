@@ -4,7 +4,7 @@ It's an Angular module (ChartModule) for svg line charts construction.
 
 ![alt text](src/assets/chart.png)
 
-##Getting Started
+## Getting Started
 
 1. Import ChartModule to you main module
 
@@ -20,7 +20,7 @@ imports: [
 <app-chart [points]="points"></app-chart>
 ```
 
-##Parameters
+## Parameters
 ### points* (default: [])
 
 ### step  (default: 10)
